@@ -41,6 +41,7 @@ Here I used TypeScript to build the project since it's the native language for a
 
 1. bootstrap cdk: `aws://{account number}/us-west-1`
 2. build and deploy infra: `cdk deploy`, this should be run under the cdk project's root directory.
+3. set the lamda function's timeout to be longer since its default value is only 3s `timeout: cdk.Duration.seconds(60)`.
 
 ## FrontEnd website
 stacks:
