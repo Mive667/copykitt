@@ -1,8 +1,6 @@
-from openai import OpenAI
-import re
-from typing import List
 import os
 import argparse
+from openai import OpenAI
 
 MAX_INPUT_LENGTH = 20
 MAX_EKYWORDS_LENGTH = 5
@@ -15,6 +13,8 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 # define an entry point for the app
 def main():
+    """ send 2 requests to get branding snippet and keywords respectively """
+
     print('Running Copy Kkit')
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", "-i", type=str, required=True)
@@ -43,7 +43,7 @@ def generate_branding_snippet(prompt: str) -> (str, str):
 
     Returns:
         str: bradning snippet
-        List[str]: keywords
+        list[str]: keywords
     """
     # limitation of the number of response tokens
     enriched_prompt = f'Generate a upbeat branding snippet for {prompt},  the length of snippet should not exceed {RESPONSE_LENGTH} words. your snippet must be: complete.'
