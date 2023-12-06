@@ -57,3 +57,4 @@ stacks:
 - Deploy it on [Vercel's FrontEnd Cloud](https://vercel.com/)
 
 ### Styling the Website
+Tailwind CSS has already been integrated when initializing Next.js project.
