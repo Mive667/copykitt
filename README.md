@@ -1,4 +1,8 @@
-# copykitt
+# copykitt 
+<a href="https://codeclimate.com/github/Mive667/copykitt/maintainability"><img src="https://api.codeclimate.com/v1/badges/b0804357a46f45706292/maintainability" /></a>  
+[WebSite](https://copykitt-yl.vercel.app): https://copykitt-yl.vercel.app
+
+## Architecture
 A GPT-powered branding snippet genereator
 
 ![App_Architecture.svg](assets/App_Architecture.svg)
